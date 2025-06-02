@@ -34,7 +34,7 @@ public class EmailService {
             String emailBody = "Has recibido un nuevo mensaje de contacto:\n\n" +
                                "Nombre: " + contactFormDto.getName() + "\n" +
                                "Email: " + contactFormDto.getEmail() + "\n" +
-                               "Asunto: " + contactFormDto.getPhone() + "\n" +
+                               "Telefono: " + contactFormDto.getPhone() + "\n" +
                                "Mensaje:\n" + contactFormDto.getMessage();
             message.setText(emailBody);
             
