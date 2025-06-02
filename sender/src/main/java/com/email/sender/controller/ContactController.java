@@ -25,7 +25,7 @@ public class ContactController {
         // Validaciones básicas (puedes expandirlas)
         if (contactFormDto.getName() == null || contactFormDto.getName().isEmpty() ||
             contactFormDto.getEmail() == null || contactFormDto.getEmail().isEmpty() ||
-            contactFormDto.getSubject() == null || contactFormDto.getSubject().isEmpty() ||
+            contactFormDto.getPhone() == null || contactFormDto.getPhone().isEmpty() ||
             contactFormDto.getMessage() == null || contactFormDto.getMessage().isEmpty()) {
             return ResponseEntity.badRequest().body("Todos los campos son obligatorios.");
         }

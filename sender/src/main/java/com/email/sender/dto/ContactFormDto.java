@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class ContactFormDto {
     private String name;
     private String email;
-    private String subject;
+    private String phone;
     private String message;
 
     

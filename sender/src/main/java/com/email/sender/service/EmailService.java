@@ -28,13 +28,13 @@ public class EmailService {
             message.setTo(toEmail); // Correo destinatario (configurado por ti)
             
             // Asunto del correo que recibirás
-            message.setSubject("Nuevo mensaje de contacto: " + contactFormDto.getSubject());
+            message.setSubject("Nuevo mensaje de contacto: " + contactFormDto.getPhone());
             
             // Cuerpo del mensaje
             String emailBody = "Has recibido un nuevo mensaje de contacto:\n\n" +
                                "Nombre: " + contactFormDto.getName() + "\n" +
                                "Email: " + contactFormDto.getEmail() + "\n" +
-                               "Asunto: " + contactFormDto.getSubject() + "\n" +
+                               "Asunto: " + contactFormDto.getPhone() + "\n" +
                                "Mensaje:\n" + contactFormDto.getMessage();
             message.setText(emailBody);
             
