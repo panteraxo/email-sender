@@ -1,5 +1,5 @@
 # Imagen base con Java 17 (puedes cambiar la versión si usas otra)
-FROM eclipse-temurin:17-jdk-alpine
+FROM eclipse-temurin:21-jdk-alpine
 
 # Directorio de trabajo en el contenedor
 WORKDIR /app
