@@ -31,4 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
-/email.properties
+src/main/resource/email.properties
