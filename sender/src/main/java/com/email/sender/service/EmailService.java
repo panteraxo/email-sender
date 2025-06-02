@@ -20,7 +20,7 @@ public class EmailService {
 
     @Value("${app.email.to}")
     private String toEmail;
-
+    
     public void sendContactEmail(ContactFormDto contactFormDto) {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
