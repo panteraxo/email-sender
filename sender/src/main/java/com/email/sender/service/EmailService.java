@@ -26,6 +26,7 @@ public class EmailService {
             SimpleMailMessage message = new SimpleMailMessage();
             message.setFrom(fromEmail); // Correo remitente (configurado en application.properties)
             message.setTo(toEmail); // Correo destinatario (configurado por ti)
+            message.setReplyTo(contactFormDto.getEmail());
             
             // Asunto del correo que recibirás
             message.setSubject("Nuevo mensaje de contacto: " + contactFormDto.getPhone());
