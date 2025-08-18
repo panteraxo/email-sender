@@ -35,14 +35,13 @@ public class EmailService {
 
             // Para que al responder vaya al correo de la persona
             helper.setReplyTo(contactFormDto.getEmail());
+            helper.setSubject("Neue Kontaktanfrage: " + contactFormDto.getPhone());
 
-            helper.setSubject("Nuevo mensaje de contacto: " + contactFormDto.getPhone());
-
-            String emailBody = "Has recibido un nuevo mensaje de contacto:\n\n" +
-                               "Nombre: " + contactFormDto.getName() + "\n" +
-                               "Email: " + contactFormDto.getEmail() + "\n" +
-                               "Telefono: " + contactFormDto.getPhone() + "\n" +
-                               "Mensaje:\n" + contactFormDto.getMessage();
+            String emailBody = "Sie haben eine neue Kontaktanfrage erhalten:\n\n" +
+                            "Name: " + contactFormDto.getName() + "\n" +
+                            "E-Mail: " + contactFormDto.getEmail() + "\n" +
+                            "Telefon: " + contactFormDto.getPhone() + "\n" +
+                            "Nachricht:\n" + contactFormDto.getMessage();
 
             helper.setText(emailBody, false);
 
